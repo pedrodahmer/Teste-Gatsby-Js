@@ -14,12 +14,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
     "gatsby": "^3.13.0",
+    "gatsby-plugin-canonical-urls": "^3.13.0",
     "gatsby-plugin-google-analytics": "^3.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-nprogress": "^3.13.0",
+    "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-sitemap": "^4.9.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.3.2"

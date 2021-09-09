@@ -9,6 +9,9 @@ const siteMetadata = require('./config/metadata')
 module.exports = {
   siteMetadata,
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `@chakra-ui/gatsby-plugin`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -27,10 +30,23 @@ module.exports = {
         fonts: [
           {
             family: `Yeseva One`,
-            subsets: [`400`],
+            variants: [`400`],
           },
         ],
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Retiro de Yoga e Arte eu Já Ecuto os Teus Sinais`,
+        short_name: `EJEOTS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#EA5C6B`,
+        display: `standalone`,
+        icon: 'src/images/icon.png' //512 X 512 PNG IMAGE GOES HERE
+      },
+    },
+    `gatsby-plugin-offline`
   ],
 }
